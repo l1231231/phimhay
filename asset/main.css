@@ -1,0 +1,396 @@
+/*-------header--------*/
+
+.header{
+    display:flex;
+    background-color:var(--header-color)
+}
+.header_left{
+    width:20%;
+    position: relative;
+}
+.header_logo{
+    width:100px;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.header_mid{
+    width:60%;
+}
+.header_search{
+    width:90%;
+    height:3rem;
+    border-radius:0.5rem;
+    outline:none;
+    margin:3rem 0 1.5rem;
+    text-indent: 1rem;
+}
+.header_ul{
+    list-style-type:none;
+    margin-bottom: 1rem;
+}
+.header_link{    
+    float:left;
+}
+.header_link-item{
+    text-decoration:none;
+    padding:1rem;
+    font-size: 1.8rem;
+    font-family: Helvetica, Arial, sans-serif;
+    color:var(--white-color);
+    text-align: center;
+    line-height: 60px;
+    font-weight:10;
+}
+.header_link-item:hover{
+    color:var(--btn-color)
+}
+.active{
+    color:var(--btn-color);
+}
+/* .header_link a{
+    position: relative;
+}
+ .header_link a.active::before{
+    content: '';
+    position:absolute;
+    left:0;
+    bottom: -6px;
+    width:100%;
+    height: 0.2rem;
+    background:var(--white-color)
+} */
+
+.dropdown{
+    position:absolute;
+    background-color: var(--header-color);
+    list-style-type:none;
+    display: none;
+    z-index: 1;
+}
+.header_link:hover .dropdown{
+    display: block;
+}
+
+
+
+/*----------------*/
+.header_right{
+    width:20%;
+}
+.account{
+    margin:2rem 0 1rem;
+}
+.btn{
+    font-size:1.6rem;
+    padding:0.5rem;
+    border-radius:0.5rem;
+    border:none;
+    outline:none;
+    margin:0.5rem;
+    background-color:var(--btn-color);
+    cursor:pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.account_another{
+}
+.account_another p{
+    color:var(--white-color);
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+.account_icon i{
+    font-size:1.6rem;
+    padding:0.5rem;
+    cursor: pointer;
+    background-color: var(--white-color);
+    border-radius: 30px;
+}
+.account_icon i:hover{
+    opacity: 0.7;
+}
+.icon_fb{
+    color:rgb(24,119,242);
+}
+.icon_gg{
+    color:rgb(234,67,53);
+}
+.right_mobile{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+.tab{
+    align-items: center;
+    font-size: 3rem;
+    color:var(--white-color);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.tab_menu{
+    background-color:var(--header-color);
+    position: absolute;
+    width:200px;
+    right:0;
+    list-style-type:none;
+    display: none;
+}
+.menu_account{
+    display:flex;
+    border-top:0.2rem solid black;
+}
+.menu_account-item{
+    cursor: pointer;
+}
+
+/*------content-------*/
+.content{
+    display:flex;
+    background-color:var(--main-color)
+}
+.content_left{
+    width:20%;
+    height:500px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.content_list-banner{
+    width:100%;
+    height:100%;
+    transition: 1s ease-in;
+    position: absolute;
+}
+.content_left-banner{
+    width:100%;
+    height:100%;
+}
+
+.content_mid{
+    width:60%;
+}
+.content_film{
+    overflow: hidden;
+    margin:0 1rem 1rem 1rem;
+}
+
+.content_film-title{
+    display:flex;
+    justify-content:space-between;
+}
+.title_film{
+    font-size:1.8rem;
+    color:var(--white-color);
+    padding:0.5rem;
+    border-bottom: 3px solid var(--btn-color);
+}
+.content_listFilm{
+    display:flex;
+    border-bottom: 2px solid rgb(180, 115, 31);
+}
+
+.icon_listFilm{
+    font-size:2.5rem;
+    margin:auto;
+    color:var(--white-color);
+    cursor:pointer;
+    transition: 0.2s;
+}
+.icon_listFilm:hover{
+    color:var(--btn-color);
+    font-size: 3rem;
+
+}
+
+.list_film{
+    display: flex;
+    justify-content: space-between;
+    list-style-type:none;
+}
+.list_film-item{
+    width:20%;
+    height: 150px;
+    margin:1rem;
+    min-width: 11rem;
+    position: relative;
+}
+.list_film-img{
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+    transition:0.5s;
+}
+.list_film-item:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 0.5rem;
+}
+.info_film{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    right:0;
+    text-align:center;
+    height:35px;
+    background-color:rgba(28, 27, 27, 0.8);
+    cursor: pointer;
+}
+.info_film p{
+    font-size:1.4rem;
+    color:#fff;
+    height:100%;
+}
+
+
+
+.content_right{
+    width:20%;
+    background-color: var(--content-color);
+}
+.right_rate>p{
+    font-size: 2rem;
+    text-align: center;
+    color:var(--btn-color);
+    line-height: 1.5;
+    width:100%
+    
+}
+
+.listRate{
+    list-style-type:none;
+}
+.listRate-item{
+    display:flex;
+    margin:1rem
+}
+
+.listRate_img{
+    width:7.5rem;
+    height: 9.5rem;
+}
+.description{
+    margin-left:1rem;
+}
+.name{
+    font-size: 1.6rem;
+    color:var(--white-color)
+}
+.view{
+    font-size: 1.4rem;
+    color:var(--btn-color);
+    margin-top:1rem;
+}
+.content_banner-mobile{
+    display: none;
+    background-color: var(--main-color);
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------handle responsive------------*/
+@media only screen and (max-width:1050px){
+    .content_left{
+        display:none;
+    }
+    .content_mid{
+        width:70%;
+        margin:0 1rem 0rem 1rem;
+    }
+    .content_right{
+        width:30%;
+    }
+    
+}
+@media only screen and (max-width:700px) {
+    .right_lap{
+        display: none;
+    }
+    .header_ul{
+        display: none;
+    }
+    .header_search{
+        margin:2rem 0;
+        width:100%
+    }
+    .header_logo{
+        width:50px;
+    }
+    .right_mobile{
+        display:block;
+
+    }
+    .content_left{
+        display:none;
+    } 
+    .content{
+        display:block;
+        width:100%;
+    }
+    .content_mid{
+        width:90%;
+    }
+    .list_film-item:last-child{
+        display:none;
+    }
+    .list_film-item{
+        margin:0.3rem;
+        width:30%;
+    }
+    .title_film{
+        font-size:1.4rem;
+    }
+    .content_right{
+        display: flex;
+        width:100%;
+    }
+    .right_rate{
+        width:40%;
+    }
+    .content_banner-mobile{
+        display: block;
+        float:right;
+        width:60%;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
