@@ -366,7 +366,7 @@
         width:100%;
     }
     .content_mid{
-        width:90%;
+        width:100%;
     }
     .list_film-item:last-child{
         display:none;
@@ -391,6 +391,13 @@
         width:60%;
         position: relative;
         overflow: hidden;
+    }
+    .content_mid{
+        margin:0;
+    }
+    .info_film p{
+        font-size: 1.2rem;
+        height:1;
     }
 }
 
